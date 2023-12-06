@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator app</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+   <div class="calculatorWrapper">
+
+    <div class="calculatorBody">
+        <p class="calcHeading">calculator</p>
+        <form action="">
+            <div class="inputFeild">
+                <input id="result" type="text" name="display" id="" class="inputBox">
+            </div>
+            <div class="firstRow allBtns">
+                <input onclick="displayData(1)" type="button" value="1">
+                <input onclick="displayData(2)" type="button" value="2">
+                <input onclick="displayData(3)" type="button" value="3">
+                <input onclick="displayData('+')" type="button" value="+">
+            </div>
+            <div class="secondRow allBtns">
+                <input onclick="displayData(4)" type="button" value="4">
+                <input onclick="displayData(5)" type="button" value="5">
+                <input onclick="displayData(6)" type="button" value="6">
+                <input onclick="displayData('-')" type="button" value="-">
+            </div>
+            <div class="thirdRow allBtns">
+                <input onclick="displayData(7)" type="button" value="7">
+                <input onclick="displayData(8)" type="button" value="8">
+                <input onclick="displayData(9)" type="button" value="9">
+                <input onclick="displayData('*')" type="button" value="*">
+            </div>
+            <div class="fourthRow allBtns">
+                <input onclick="displayData('.')" type="button" value=".">
+                <input onclick="displayData(0)" type="button" value="0">
+                <input onclick="out()" type="button" value="=">
+                <input onclick="displayData('/')" type="button" value="/">
+            </div>
+            <div class="allClear">
+                <input onclick="allclear()" type="button" value="AC" class="allclearBtn">
+                <input onclick="backC()" type="button" value="C" class="allclearBtn">
+            </div>
+
+        </form>
+    </div>
+
+   </div>
+
+</body>
+<script src="./calc.js"></script>
+</html>
